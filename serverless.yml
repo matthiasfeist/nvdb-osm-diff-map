@@ -32,6 +32,12 @@ functions:
       # run at 6:00 on each 21st (as it seems that most files are being updated on the 20st of each month)
       - schedule: cron(0 6 21 * ? *)
 
+  compileFileInformation:
+    handler: src/lambda-compile-file-information.handler
+    logRetentionInDays: 7
+    events:
+      - schedule: rate(1 day)
+
 plugins:
   - serverless-plugin-log-retention
 
