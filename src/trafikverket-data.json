@@ -1,0 +1,1452 @@
+[
+  {
+    "trafikverketAreaCode": 329,
+    "name": "Ale kommun",
+    "slug": "ale-kommun"
+  },
+  {
+    "trafikverketAreaCode": 348,
+    "name": "Alingsås kommun",
+    "slug": "alingsas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 390,
+    "name": "Alvesta kommun",
+    "slug": "alvesta-kommun"
+  },
+  {
+    "trafikverketAreaCode": 363,
+    "name": "Aneby kommun",
+    "slug": "aneby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 269,
+    "name": "Arboga kommun",
+    "slug": "arboga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 162,
+    "name": "Arjeplog kommun",
+    "slug": "arjeplog-kommun"
+  },
+  {
+    "trafikverketAreaCode": 173,
+    "name": "Arvidsjaur kommun",
+    "slug": "arvidsjaur-kommun"
+  },
+  {
+    "trafikverketAreaCode": 234,
+    "name": "Arvika kommun",
+    "slug": "arvika-kommun"
+  },
+  {
+    "trafikverketAreaCode": 310,
+    "name": "Askersunds kommun",
+    "slug": "askersunds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 228,
+    "name": "Avesta kommun",
+    "slug": "avesta-kommun"
+  },
+  {
+    "trafikverketAreaCode": 282,
+    "name": "Bengtsfors kommun",
+    "slug": "bengtsfors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 193,
+    "name": "Bergs kommun",
+    "slug": "bergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 182,
+    "name": "Bjurholms kommun",
+    "slug": "bjurholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 400,
+    "name": "Bjuvs kommun",
+    "slug": "bjuvs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 158,
+    "name": "Bodens kommun",
+    "slug": "bodens-kommun"
+  },
+  {
+    "trafikverketAreaCode": 369,
+    "name": "Bollebygds kommun",
+    "slug": "bollebygds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 206,
+    "name": "Bollnäs kommun",
+    "slug": "bollnas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 394,
+    "name": "Borgholms kommun",
+    "slug": "borgholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 220,
+    "name": "Borlänge kommun",
+    "slug": "borlange-kommun"
+  },
+  {
+    "trafikverketAreaCode": 368,
+    "name": "Borås kommun",
+    "slug": "boras-kommun"
+  },
+  {
+    "trafikverketAreaCode": 289,
+    "name": "Botkyrka kommun",
+    "slug": "botkyrka-kommun"
+  },
+  {
+    "trafikverketAreaCode": 347,
+    "name": "Boxholms kommun",
+    "slug": "boxholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 425,
+    "name": "Bromölla kommun",
+    "slug": "bromolla-kommun"
+  },
+  {
+    "trafikverketAreaCode": 195,
+    "name": "Bräcke kommun",
+    "slug": "bracke-kommun"
+  },
+  {
+    "trafikverketAreaCode": 441,
+    "name": "Burlövs kommun",
+    "slug": "burlovs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 416,
+    "name": "Båstads kommun",
+    "slug": "bastads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 288,
+    "name": "Dals-Eds kommun",
+    "slug": "dals-eds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 277,
+    "name": "Danderyds kommun",
+    "slug": "danderyds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 286,
+    "name": "Degerfors kommun",
+    "slug": "degerfors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 171,
+    "name": "Dorotea kommun",
+    "slug": "dorotea-kommun"
+  },
+  {
+    "trafikverketAreaCode": 229,
+    "name": "Eda kommun",
+    "slug": "eda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 267,
+    "name": "Ekerö kommun",
+    "slug": "ekero-kommun"
+  },
+  {
+    "trafikverketAreaCode": 372,
+    "name": "Eksjö kommun",
+    "slug": "eksjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 413,
+    "name": "Emmaboda kommun",
+    "slug": "emmaboda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 249,
+    "name": "Enköpings kommun",
+    "slug": "enkopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 272,
+    "name": "Eskilstuna kommun",
+    "slug": "eskilstuna-kommun"
+  },
+  {
+    "trafikverketAreaCode": 431,
+    "name": "Eslövs kommun",
+    "slug": "eslovs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 353,
+    "name": "Essunga kommun",
+    "slug": "essunga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 240,
+    "name": "Fagersta kommun",
+    "slug": "fagersta-kommun"
+  },
+  {
+    "trafikverketAreaCode": 379,
+    "name": "Falkenbergs kommun",
+    "slug": "falkenbergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 2339,
+    "name": "Falköpings kommun",
+    "slug": "falkopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 212,
+    "name": "Faluns kommun",
+    "slug": "faluns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 232,
+    "name": "Filipstads kommun",
+    "slug": "filipstads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 303,
+    "name": "Finspångs kommun",
+    "slug": "finspangs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 280,
+    "name": "Flens kommun",
+    "slug": "flens-kommun"
+  },
+  {
+    "trafikverketAreaCode": 250,
+    "name": "Forshaga kommun",
+    "slug": "forshaga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 319,
+    "name": "Färgelanda kommun",
+    "slug": "fargelanda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 225,
+    "name": "Gagnefs kommun",
+    "slug": "gagnefs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 392,
+    "name": "Gislaveds kommun",
+    "slug": "gislaveds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 305,
+    "name": "Gnesta kommun",
+    "slug": "gnesta-kommun"
+  },
+  {
+    "trafikverketAreaCode": 386,
+    "name": "Gnosjö kommun",
+    "slug": "gnosjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 324,
+    "name": "Gotlands kommun",
+    "slug": "gotlands-kommun"
+  },
+  {
+    "trafikverketAreaCode": 244,
+    "name": "Grums kommun",
+    "slug": "grums-kommun"
+  },
+  {
+    "trafikverketAreaCode": 342,
+    "name": "Grästorps kommun",
+    "slug": "grastorps-kommun"
+  },
+  {
+    "trafikverketAreaCode": 301,
+    "name": "Gullspångs kommun",
+    "slug": "gullspangs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 161,
+    "name": "Gällivare kommun",
+    "slug": "gallivare-kommun"
+  },
+  {
+    "trafikverketAreaCode": 211,
+    "name": "Gävle kommun",
+    "slug": "gavle-kommun"
+  },
+  {
+    "trafikverketAreaCode": 364,
+    "name": "Göteborgs kommun",
+    "slug": "goteborgs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 321,
+    "name": "Götene kommun",
+    "slug": "gotene-kommun"
+  },
+  {
+    "trafikverketAreaCode": 357,
+    "name": "Habo kommun",
+    "slug": "habo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 227,
+    "name": "Hagfors kommun",
+    "slug": "hagfors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 307,
+    "name": "Hallsbergs kommun",
+    "slug": "hallsbergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 242,
+    "name": "Hallstahammars kommun",
+    "slug": "hallstahammars-kommun"
+  },
+  {
+    "trafikverketAreaCode": 404,
+    "name": "Halmstads kommun",
+    "slug": "halmstads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 295,
+    "name": "Hammarö kommun",
+    "slug": "hammaro-kommun"
+  },
+  {
+    "trafikverketAreaCode": 291,
+    "name": "Haninge kommun",
+    "slug": "haninge-kommun"
+  },
+  {
+    "trafikverketAreaCode": 167,
+    "name": "Haparanda kommun",
+    "slug": "haparanda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 231,
+    "name": "Heby kommun",
+    "slug": "heby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 221,
+    "name": "Hedemora kommun",
+    "slug": "hedemora-kommun"
+  },
+  {
+    "trafikverketAreaCode": 424,
+    "name": "Helsingborgs kommun",
+    "slug": "helsingborgs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 330,
+    "name": "Herrljunga kommun",
+    "slug": "herrljunga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 328,
+    "name": "Hjo kommun",
+    "slug": "hjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 230,
+    "name": "Hofors kommun",
+    "slug": "hofors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 283,
+    "name": "Huddinge kommun",
+    "slug": "huddinge-kommun"
+  },
+  {
+    "trafikverketAreaCode": 200,
+    "name": "Hudiksvalls kommun",
+    "slug": "hudiksvalls-kommun"
+  },
+  {
+    "trafikverketAreaCode": 385,
+    "name": "Hultsfreds kommun",
+    "slug": "hultsfreds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 382,
+    "name": "Hylte kommun",
+    "slug": "hylte-kommun"
+  },
+  {
+    "trafikverketAreaCode": 252,
+    "name": "Håbo kommun",
+    "slug": "habo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 246,
+    "name": "Hällefors kommun",
+    "slug": "hallefors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 204,
+    "name": "Härjedalens kommun",
+    "slug": "harjedalens-kommun"
+  },
+  {
+    "trafikverketAreaCode": 194,
+    "name": "Härnösands kommun",
+    "slug": "harnosands-kommun"
+  },
+  {
+    "trafikverketAreaCode": 374,
+    "name": "Härryda kommun",
+    "slug": "harryda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 428,
+    "name": "Hässleholms kommun",
+    "slug": "hassleholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 410,
+    "name": "Höganäs kommun",
+    "slug": "hoganas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 388,
+    "name": "Högsby kommun",
+    "slug": "hogsby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 432,
+    "name": "Hörby kommun",
+    "slug": "horby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 401,
+    "name": "Höör kommun",
+    "slug": "hoor-kommun"
+  },
+  {
+    "trafikverketAreaCode": 157,
+    "name": "Jokkmokks kommun",
+    "slug": "jokkmokks-kommun"
+  },
+  {
+    "trafikverketAreaCode": 245,
+    "name": "Järfälla kommun",
+    "slug": "jarfalla-kommun"
+  },
+  {
+    "trafikverketAreaCode": 356,
+    "name": "Jönköpings kommun",
+    "slug": "jonkopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 159,
+    "name": "Kalix kommun",
+    "slug": "kalix-kommun"
+  },
+  {
+    "trafikverketAreaCode": 412,
+    "name": "Kalmars kommun",
+    "slug": "kalmars-kommun"
+  },
+  {
+    "trafikverketAreaCode": 313,
+    "name": "Karlsborgs kommun",
+    "slug": "karlsborgs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 429,
+    "name": "Karlshamns kommun",
+    "slug": "karlshamns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 264,
+    "name": "Karlskoga kommun",
+    "slug": "karlskoga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 397,
+    "name": "Karlskrona kommun",
+    "slug": "karlskrona-kommun"
+  },
+  {
+    "trafikverketAreaCode": 257,
+    "name": "Karlstads kommun",
+    "slug": "karlstads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 290,
+    "name": "Katrineholms kommun",
+    "slug": "katrineholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 254,
+    "name": "Kils kommun",
+    "slug": "kils-kommun"
+  },
+  {
+    "trafikverketAreaCode": 349,
+    "name": "Kinda kommun",
+    "slug": "kinda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 160,
+    "name": "Kiruna kommun",
+    "slug": "kiruna-kommun"
+  },
+  {
+    "trafikverketAreaCode": 398,
+    "name": "Klippans kommun",
+    "slug": "klippans-kommun"
+  },
+  {
+    "trafikverketAreaCode": 2344,
+    "name": "Knivsta kommun",
+    "slug": "knivsta-kommun"
+  },
+  {
+    "trafikverketAreaCode": 191,
+    "name": "Kramfors kommun",
+    "slug": "kramfors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 420,
+    "name": "Kristianstads kommun",
+    "slug": "kristianstads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 266,
+    "name": "Kristinehamns kommun",
+    "slug": "kristinehamns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 187,
+    "name": "Krokoms kommun",
+    "slug": "krokoms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 306,
+    "name": "Kumla kommun",
+    "slug": "kumla-kommun"
+  },
+  {
+    "trafikverketAreaCode": 383,
+    "name": "Kungsbacka kommun",
+    "slug": "kungsbacka-kommun"
+  },
+  {
+    "trafikverketAreaCode": 274,
+    "name": "Kungsörs kommun",
+    "slug": "kungsors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 365,
+    "name": "Kungälvs kommun",
+    "slug": "kungalvs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 403,
+    "name": "Kävlinge kommun",
+    "slug": "kavlinge-kommun"
+  },
+  {
+    "trafikverketAreaCode": 253,
+    "name": "Köpings kommun",
+    "slug": "kopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 415,
+    "name": "Laholms kommun",
+    "slug": "laholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 402,
+    "name": "Landskrona kommun",
+    "slug": "landskrona-kommun"
+  },
+  {
+    "trafikverketAreaCode": 308,
+    "name": "Laxå kommun",
+    "slug": "laxa-kommun"
+  },
+  {
+    "trafikverketAreaCode": 281,
+    "name": "Lekebergs kommun",
+    "slug": "lekebergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 2943,
+    "name": "Leksands kommun",
+    "slug": "leksands-kommun"
+  },
+  {
+    "trafikverketAreaCode": 367,
+    "name": "Lerums kommun",
+    "slug": "lerums-kommun"
+  },
+  {
+    "trafikverketAreaCode": 405,
+    "name": "Lessebo kommun",
+    "slug": "lessebo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 292,
+    "name": "Lidingö kommun",
+    "slug": "lidingo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 320,
+    "name": "Lidköpings kommun",
+    "slug": "lidkopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 346,
+    "name": "Lilla Edets kommun",
+    "slug": "lilla-edets-kommun"
+  },
+  {
+    "trafikverketAreaCode": 241,
+    "name": "Lindesbergs kommun",
+    "slug": "lindesbergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 325,
+    "name": "Linköpings kommun",
+    "slug": "linkopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 411,
+    "name": "Ljungby kommun",
+    "slug": "ljungby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 199,
+    "name": "Ljusdals kommun",
+    "slug": "ljusdals-kommun"
+  },
+  {
+    "trafikverketAreaCode": 235,
+    "name": "Ljusnarsbergs kommun",
+    "slug": "ljusnarsbergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 434,
+    "name": "Lomma kommun",
+    "slug": "lomma-kommun"
+  },
+  {
+    "trafikverketAreaCode": 222,
+    "name": "Ludvika kommun",
+    "slug": "ludvika-kommun"
+  },
+  {
+    "trafikverketAreaCode": 164,
+    "name": "Luleå kommun",
+    "slug": "lulea-kommun"
+  },
+  {
+    "trafikverketAreaCode": 435,
+    "name": "Lunds kommun",
+    "slug": "lunds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 170,
+    "name": "Lycksele kommun",
+    "slug": "lycksele-kommun"
+  },
+  {
+    "trafikverketAreaCode": 339,
+    "name": "Lysekils kommun",
+    "slug": "lysekils-kommun"
+  },
+  {
+    "trafikverketAreaCode": 437,
+    "name": "Malmö kommun",
+    "slug": "malmo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 210,
+    "name": "Malung-Sälen",
+    "slug": "malung-salen"
+  },
+  {
+    "trafikverketAreaCode": 176,
+    "name": "Malå kommun",
+    "slug": "mala-kommun"
+  },
+  {
+    "trafikverketAreaCode": 309,
+    "name": "Mariestads kommun",
+    "slug": "mariestads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 408,
+    "name": "Markaryds kommun",
+    "slug": "markaryds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 377,
+    "name": "Marks kommun",
+    "slug": "marks-kommun"
+  },
+  {
+    "trafikverketAreaCode": 312,
+    "name": "Melleruds kommun",
+    "slug": "melleruds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 336,
+    "name": "Mjölby kommun",
+    "slug": "mjolby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 201,
+    "name": "Mora kommun",
+    "slug": "mora-kommun"
+  },
+  {
+    "trafikverketAreaCode": 315,
+    "name": "Motala kommun",
+    "slug": "motala-kommun"
+  },
+  {
+    "trafikverketAreaCode": 361,
+    "name": "Mullsjö kommun",
+    "slug": "mullsjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 318,
+    "name": "Munkedals kommun",
+    "slug": "munkedals-kommun"
+  },
+  {
+    "trafikverketAreaCode": 255,
+    "name": "Munkfors kommun",
+    "slug": "munkfors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 375,
+    "name": "Mölndals kommun",
+    "slug": "molndals-kommun"
+  },
+  {
+    "trafikverketAreaCode": 380,
+    "name": "Mönsterås kommun",
+    "slug": "monsteras-kommun"
+  },
+  {
+    "trafikverketAreaCode": 414,
+    "name": "Mörbylånga kommun",
+    "slug": "morbylanga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 293,
+    "name": "Nacka kommun",
+    "slug": "nacka-kommun"
+  },
+  {
+    "trafikverketAreaCode": 259,
+    "name": "Nora kommun",
+    "slug": "nora-kommun"
+  },
+  {
+    "trafikverketAreaCode": 238,
+    "name": "Norbergs kommun",
+    "slug": "norbergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 197,
+    "name": "Nordanstigs kommun",
+    "slug": "nordanstigs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 185,
+    "name": "Nordmalings kommun",
+    "slug": "nordmalings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 316,
+    "name": "Norrköpings kommun",
+    "slug": "norrkopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 223,
+    "name": "Norrtälje kommun",
+    "slug": "norrtalje-kommun"
+  },
+  {
+    "trafikverketAreaCode": 178,
+    "name": "Norsjö kommun",
+    "slug": "norsjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 396,
+    "name": "Nybro kommun",
+    "slug": "nybro-kommun"
+  },
+  {
+    "trafikverketAreaCode": 279,
+    "name": "Nykvarns kommun",
+    "slug": "nykvarns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 302,
+    "name": "Nyköpings kommun",
+    "slug": "nykopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 300,
+    "name": "Nynäshamns kommun",
+    "slug": "nynashamns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 371,
+    "name": "Nässjö kommun",
+    "slug": "nassjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 209,
+    "name": "Ockelbo kommun",
+    "slug": "ockelbo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 419,
+    "name": "Olofströms kommun",
+    "slug": "olofstroms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 202,
+    "name": "Orsa kommun",
+    "slug": "orsa-kommun"
+  },
+  {
+    "trafikverketAreaCode": 345,
+    "name": "Orusts kommun",
+    "slug": "orusts-kommun"
+  },
+  {
+    "trafikverketAreaCode": 409,
+    "name": "Osby kommun",
+    "slug": "osby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 384,
+    "name": "Oskarshamns kommun",
+    "slug": "oskarshamns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 207,
+    "name": "Ovanåkers kommun",
+    "slug": "ovanakers-kommun"
+  },
+  {
+    "trafikverketAreaCode": 314,
+    "name": "Oxelösunds kommun",
+    "slug": "oxelosunds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 156,
+    "name": "Pajala kommun",
+    "slug": "pajala-kommun"
+  },
+  {
+    "trafikverketAreaCode": 333,
+    "name": "Partille kommun",
+    "slug": "partille-kommun"
+  },
+  {
+    "trafikverketAreaCode": 421,
+    "name": "Perstorps kommun",
+    "slug": "perstorps-kommun"
+  },
+  {
+    "trafikverketAreaCode": 175,
+    "name": "Piteå kommun",
+    "slug": "pitea-kommun"
+  },
+  {
+    "trafikverketAreaCode": 190,
+    "name": "Ragunda kommun",
+    "slug": "ragunda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 186,
+    "name": "Robertsfors kommun",
+    "slug": "robertsfors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 418,
+    "name": "Ronneby kommun",
+    "slug": "ronneby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 208,
+    "name": "Rättviks kommun",
+    "slug": "rattviks-kommun"
+  },
+  {
+    "trafikverketAreaCode": 233,
+    "name": "Sala kommun",
+    "slug": "sala-kommun"
+  },
+  {
+    "trafikverketAreaCode": 287,
+    "name": "Salems kommun",
+    "slug": "salems-kommun"
+  },
+  {
+    "trafikverketAreaCode": 217,
+    "name": "Sandvikens kommun",
+    "slug": "sandvikens-kommun"
+  },
+  {
+    "trafikverketAreaCode": 258,
+    "name": "Sigtuna kommun",
+    "slug": "sigtuna-kommun"
+  },
+  {
+    "trafikverketAreaCode": 439,
+    "name": "Simrishamns kommun",
+    "slug": "simrishamns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 436,
+    "name": "Sjöbo kommun",
+    "slug": "sjobo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 341,
+    "name": "Skara kommun",
+    "slug": "skara-kommun"
+  },
+  {
+    "trafikverketAreaCode": 177,
+    "name": "Skellefteå kommun",
+    "slug": "skelleftea-kommun"
+  },
+  {
+    "trafikverketAreaCode": 247,
+    "name": "Skinnskattebergs kommun",
+    "slug": "skinnskattebergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 442,
+    "name": "Skurups kommun",
+    "slug": "skurups-kommun"
+  },
+  {
+    "trafikverketAreaCode": 326,
+    "name": "Skövde kommun",
+    "slug": "skovde-kommun"
+  },
+  {
+    "trafikverketAreaCode": 236,
+    "name": "Smedjebackens kommun",
+    "slug": "smedjebackens-kommun"
+  },
+  {
+    "trafikverketAreaCode": 189,
+    "name": "Sollefteå kommun",
+    "slug": "solleftea-kommun"
+  },
+  {
+    "trafikverketAreaCode": 273,
+    "name": "Sollentuna kommun",
+    "slug": "sollentuna-kommun"
+  },
+  {
+    "trafikverketAreaCode": 296,
+    "name": "Solna kommun",
+    "slug": "solna-kommun"
+  },
+  {
+    "trafikverketAreaCode": 165,
+    "name": "Sorsele kommun",
+    "slug": "sorsele-kommun"
+  },
+  {
+    "trafikverketAreaCode": 322,
+    "name": "Sotenäs kommun",
+    "slug": "sotenas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 440,
+    "name": "Staffanstorps kommun",
+    "slug": "staffanstorps-kommun"
+  },
+  {
+    "trafikverketAreaCode": 355,
+    "name": "Stenungsunds kommun",
+    "slug": "stenungsunds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 278,
+    "name": "Stockholms kommun",
+    "slug": "stockholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 262,
+    "name": "Storfors kommun",
+    "slug": "storfors-kommun"
+  },
+  {
+    "trafikverketAreaCode": 168,
+    "name": "Storumans kommun",
+    "slug": "storumans-kommun"
+  },
+  {
+    "trafikverketAreaCode": 265,
+    "name": "Strängnäs kommun",
+    "slug": "strangnas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 298,
+    "name": "Strömstads kommun",
+    "slug": "stromstads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 179,
+    "name": "Strömsunds kommun",
+    "slug": "stromsunds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 294,
+    "name": "Sundbybergs kommun",
+    "slug": "sundbybergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 196,
+    "name": "Sundsvalls kommun",
+    "slug": "sundsvalls-kommun"
+  },
+  {
+    "trafikverketAreaCode": 239,
+    "name": "Sunne kommun",
+    "slug": "sunne-kommun"
+  },
+  {
+    "trafikverketAreaCode": 248,
+    "name": "Surahammars kommun",
+    "slug": "surahammars-kommun"
+  },
+  {
+    "trafikverketAreaCode": 430,
+    "name": "Svalövs kommun",
+    "slug": "svalovs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 438,
+    "name": "Svedala kommun",
+    "slug": "svedala-kommun"
+  },
+  {
+    "trafikverketAreaCode": 373,
+    "name": "Svenljunga kommun",
+    "slug": "svenljunga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 276,
+    "name": "Säffle kommun",
+    "slug": "saffle-kommun"
+  },
+  {
+    "trafikverketAreaCode": 226,
+    "name": "Säters kommun",
+    "slug": "saters-kommun"
+  },
+  {
+    "trafikverketAreaCode": 395,
+    "name": "Sävsjö kommun",
+    "slug": "savsjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 214,
+    "name": "Söderhamns kommun",
+    "slug": "soderhamns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 340,
+    "name": "Söderköpings kommun",
+    "slug": "soderkopings-kommun"
+  },
+  {
+    "trafikverketAreaCode": 285,
+    "name": "Södertälje kommun",
+    "slug": "sodertalje-kommun"
+  },
+  {
+    "trafikverketAreaCode": 426,
+    "name": "Sölvesborgs kommun",
+    "slug": "solvesborgs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 304,
+    "name": "Tanums kommun",
+    "slug": "tanums-kommun"
+  },
+  {
+    "trafikverketAreaCode": 327,
+    "name": "Tibro kommun",
+    "slug": "tibro-kommun"
+  },
+  {
+    "trafikverketAreaCode": 354,
+    "name": "Tidaholms kommun",
+    "slug": "tidaholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 218,
+    "name": "Tierps kommun",
+    "slug": "tierps-kommun"
+  },
+  {
+    "trafikverketAreaCode": 198,
+    "name": "Timrå kommun",
+    "slug": "timra-kommun"
+  },
+  {
+    "trafikverketAreaCode": 407,
+    "name": "Tingsryds kommun",
+    "slug": "tingsryds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 350,
+    "name": "Tjörns kommun",
+    "slug": "tjorns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 433,
+    "name": "Tomelilla kommun",
+    "slug": "tomelilla-kommun"
+  },
+  {
+    "trafikverketAreaCode": 215,
+    "name": "Torsby kommun",
+    "slug": "torsby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 417,
+    "name": "Torsås kommun",
+    "slug": "torsas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 376,
+    "name": "Tranemo kommun",
+    "slug": "tranemo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 358,
+    "name": "Tranås kommun",
+    "slug": "tranas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 445,
+    "name": "Trelleborgs kommun",
+    "slug": "trelleborgs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 344,
+    "name": "Trollhättans kommun",
+    "slug": "trollhattans-kommun"
+  },
+  {
+    "trafikverketAreaCode": 311,
+    "name": "Trosa kommun",
+    "slug": "trosa-kommun"
+  },
+  {
+    "trafikverketAreaCode": 284,
+    "name": "Tyresö kommun",
+    "slug": "tyreso-kommun"
+  },
+  {
+    "trafikverketAreaCode": 270,
+    "name": "Täby kommun",
+    "slug": "taby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 317,
+    "name": "Töreboda kommun",
+    "slug": "toreboda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 335,
+    "name": "Uddevalla kommun",
+    "slug": "uddevalla-kommun"
+  },
+  {
+    "trafikverketAreaCode": 362,
+    "name": "Ulricehamns kommun",
+    "slug": "ulricehamns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 181,
+    "name": "Umeå kommun",
+    "slug": "umea-kommun"
+  },
+  {
+    "trafikverketAreaCode": 263,
+    "name": "Upplands Väsby kommun",
+    "slug": "upplands-vasby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 261,
+    "name": "Upplands-Bro kommun",
+    "slug": "upplands-bro-kommun"
+  },
+  {
+    "trafikverketAreaCode": 2343,
+    "name": "Uppsala kommun",
+    "slug": "uppsala-kommun"
+  },
+  {
+    "trafikverketAreaCode": 389,
+    "name": "Uppvidinge kommun",
+    "slug": "uppvidinge-kommun"
+  },
+  {
+    "trafikverketAreaCode": 334,
+    "name": "Vadstena kommun",
+    "slug": "vadstena-kommun"
+  },
+  {
+    "trafikverketAreaCode": 391,
+    "name": "Vaggeryds kommun",
+    "slug": "vaggeryds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 338,
+    "name": "Valdemarsviks kommun",
+    "slug": "valdemarsviks-kommun"
+  },
+  {
+    "trafikverketAreaCode": 260,
+    "name": "Vallentuna kommun",
+    "slug": "vallentuna-kommun"
+  },
+  {
+    "trafikverketAreaCode": 224,
+    "name": "Vansbro kommun",
+    "slug": "vansbro-kommun"
+  },
+  {
+    "trafikverketAreaCode": 337,
+    "name": "Vara kommun",
+    "slug": "vara-kommun"
+  },
+  {
+    "trafikverketAreaCode": 378,
+    "name": "Varbergs kommun",
+    "slug": "varbergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 275,
+    "name": "Vaxholms kommun",
+    "slug": "vaxholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 443,
+    "name": "Vellinge kommun",
+    "slug": "vellinge-kommun"
+  },
+  {
+    "trafikverketAreaCode": 393,
+    "name": "Vetlanda kommun",
+    "slug": "vetlanda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 169,
+    "name": "Vilhelmina kommun",
+    "slug": "vilhelmina-kommun"
+  },
+  {
+    "trafikverketAreaCode": 332,
+    "name": "Vimmerby kommun",
+    "slug": "vimmerby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 180,
+    "name": "Vindelns kommun",
+    "slug": "vindelns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 299,
+    "name": "Vingåkers kommun",
+    "slug": "vingakers-kommun"
+  },
+  {
+    "trafikverketAreaCode": 331,
+    "name": "Vårgårda kommun",
+    "slug": "vargarda-kommun"
+  },
+  {
+    "trafikverketAreaCode": 323,
+    "name": "Vänersborgs kommun",
+    "slug": "vanersborgs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 188,
+    "name": "Vännäs kommun",
+    "slug": "vannas-kommun"
+  },
+  {
+    "trafikverketAreaCode": 268,
+    "name": "Värmdö kommun",
+    "slug": "varmdo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 387,
+    "name": "Värnamo kommun",
+    "slug": "varnamo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 359,
+    "name": "Västerviks kommun",
+    "slug": "vasterviks-kommun"
+  },
+  {
+    "trafikverketAreaCode": 256,
+    "name": "Västerås kommun",
+    "slug": "vasteras-kommun"
+  },
+  {
+    "trafikverketAreaCode": 381,
+    "name": "Växjö kommun",
+    "slug": "vaxjo-kommun"
+  },
+  {
+    "trafikverketAreaCode": 366,
+    "name": "Ydre kommun",
+    "slug": "ydre-kommun"
+  },
+  {
+    "trafikverketAreaCode": 444,
+    "name": "Ystads kommun",
+    "slug": "ystads-kommun"
+  },
+  {
+    "trafikverketAreaCode": 297,
+    "name": "Åmåls kommun",
+    "slug": "amals-kommun"
+  },
+  {
+    "trafikverketAreaCode": 203,
+    "name": "Ånge kommun",
+    "slug": "ange-kommun"
+  },
+  {
+    "trafikverketAreaCode": 183,
+    "name": "Åre kommun",
+    "slug": "are-kommun"
+  },
+  {
+    "trafikverketAreaCode": 251,
+    "name": "Årjängs kommun",
+    "slug": "arjangs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 172,
+    "name": "Åsele kommun",
+    "slug": "asele-kommun"
+  },
+  {
+    "trafikverketAreaCode": 399,
+    "name": "Åstorps kommun",
+    "slug": "astorps-kommun"
+  },
+  {
+    "trafikverketAreaCode": 351,
+    "name": "Åtvidabergs kommun",
+    "slug": "atvidabergs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 406,
+    "name": "Älmhults kommun",
+    "slug": "almhults-kommun"
+  },
+  {
+    "trafikverketAreaCode": 205,
+    "name": "Älvdalens kommun",
+    "slug": "alvdalens-kommun"
+  },
+  {
+    "trafikverketAreaCode": 216,
+    "name": "Älvkarleby kommun",
+    "slug": "alvkarleby-kommun"
+  },
+  {
+    "trafikverketAreaCode": 174,
+    "name": "Älvsbyns kommun",
+    "slug": "alvsbyns-kommun"
+  },
+  {
+    "trafikverketAreaCode": 423,
+    "name": "Ängelholms kommun",
+    "slug": "angelholms-kommun"
+  },
+  {
+    "trafikverketAreaCode": 370,
+    "name": "Öckerö kommun",
+    "slug": "ockero-kommun"
+  },
+  {
+    "trafikverketAreaCode": 352,
+    "name": "Ödeshögs kommun",
+    "slug": "odeshogs-kommun"
+  },
+  {
+    "trafikverketAreaCode": 271,
+    "name": "Örebro kommun",
+    "slug": "orebro-kommun"
+  },
+  {
+    "trafikverketAreaCode": 422,
+    "name": "Örkelljunga kommun",
+    "slug": "orkelljunga-kommun"
+  },
+  {
+    "trafikverketAreaCode": 184,
+    "name": "Örnsköldsviks kommun",
+    "slug": "ornskoldsviks-kommun"
+  },
+  {
+    "trafikverketAreaCode": 192,
+    "name": "Östersunds kommun",
+    "slug": "ostersunds-kommun"
+  },
+  {
+    "trafikverketAreaCode": 243,
+    "name": "Österåkers kommun",
+    "slug": "osterakers-kommun"
+  },
+  {
+    "trafikverketAreaCode": 219,
+    "name": "Östhammars kommun",
+    "slug": "osthammars-kommun"
+  },
+  {
+    "trafikverketAreaCode": 427,
+    "name": "Östra Göinge kommun",
+    "slug": "ostra-goinge-kommun"
+  },
+  {
+    "trafikverketAreaCode": 166,
+    "name": "Överkalix kommun",
+    "slug": "overkalix-kommun"
+  },
+  {
+    "trafikverketAreaCode": 163,
+    "name": "Övertorneå kommun",
+    "slug": "overtornea-kommun"
+  }
+]
