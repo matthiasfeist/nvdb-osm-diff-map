@@ -22,64 +22,29 @@ exports.handler = async function (event, context) {
   const feed = await parseXml(await trafVerkResponse.text())
 
   const feedItems = feed.rss.channel.item
-  const resultDoc = []
   const queue = new PQueue({ concurrency: 2 })
 
   for (const tvArea of trafikverketData) {
     const areaCode = tvArea.trafikverketAreaCode
     const data = getDataFromFeedItems(feedItems, areaCode)
 
-    const resultDocItem = {
-      name: tvArea.name,
-      slug: tvArea.slug,
-      publishedDate: null,
-      error: false,
-      errorDescription: null,
-      downloadedDate: null,
-    }
-    resultDoc.push(resultDocItem)
-
     if (data === null) {
       console.log('No download link found in feed for', tvArea.name, areaCode)
-      resultDocItem.error = true
-      resultDocItem.errorDescription =
-        'No Shapefile download found in Trafikverket Lastkajen Feed file'
       continue
     }
-    const { downloadLink, publishedDate } = data
-    resultDocItem.publishedDate = publishedDate
+    const { downloadLink } = data
 
     await queue.add(async () => {
       try {
         await uploadUrlToS3(downloadLink, tvArea.slug, BUCKET_NAME)
       } catch (e) {
         console.log('Download/Upload Problem', e)
-        resultDocItem.error = true
-        resultDocItem.errorDescription =
-          'Download problem from Trafikverket Lastkajen'
       }
-      resultDocItem.downloadedDate = new Date().toISOString()
     })
   }
 
   // wait for the queue to be completed
   await queue.onIdle()
-
-  // now write the result JSON file to S3:
-  try {
-    await s3
-      .upload({
-        Bucket: BUCKET_NAME,
-        Key: 'nvdb-zip/metadata.json',
-        Body: JSON.stringify({
-          createdAt: new Date().toISOString(),
-          result: resultDoc,
-        }),
-      })
-      .promise()
-  } catch (e) {
-    console.log(e)
-  }
 }
 
 function parseXml(xmlString) {
