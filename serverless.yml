@@ -36,7 +36,7 @@ functions:
     handler: src/lambda-compile-file-information.handler
     logRetentionInDays: 7
     events:
-      - schedule: rate(1 day)
+      - schedule: rate(6 hours)
 
 plugins:
   - serverless-plugin-log-retention

@@ -17,13 +17,19 @@ exports.handler = async function (event, context) {
   const osmAndLogsListing = osmAndLogsListingResponse.Contents
 
   const resultList = trafikverketData.map((kommunData) => {
+    const sourceDownloadedDate = getZipDownloadedDate(
+      kommunData.slug,
+      nvdbZipListing
+    )
     return {
       id: kommunData.slug,
       displayName: kommunData.name,
-      sourceData: {
-        source: 'trafikverket lastkajen',
-        downloadedDate: getZipDownloadedDate(kommunData.slug, nvdbZipListing),
-      },
+      sourceData: sourceDownloadedDate
+        ? {
+            source: 'Trafikverket Lastkajen',
+            downloadedDate: sourceDownloadedDate,
+          }
+        : null,
       generatedData: {
         log: getGeneratedData(
           kommunData.slug,
