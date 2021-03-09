@@ -11,8 +11,9 @@ This contribution is in the form of
 `<text needed here!>`
 
 ## How to deploy the NVDB OSM Diff Map yourself
-
+### Backend
 1. Clone the repo. You'll also need at least Node 14
-2. Run `npm install`
-3. Go into the file _serverless.yml_ and chose a different name for the S3 bucket (key `dataBucketName` as the one in the fils is already in use by the live project)
-4. run `npx serverless deploy` and follow the instructions.
+2. `cd` into the `backend` directory
+3. Run `npm install` 
+4. Go into the file _serverless.yml_ and chose a different name for the S3 bucket (key `dataBucketName` as the one in the fils is already in use by the live project)
+5. run `npx serverless deploy` and follow the instructions.
