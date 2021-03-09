@@ -3,12 +3,11 @@ const ec2 = new AWS.EC2()
 
 exports.handler = async function (event, context) {
   const BUCKET_NAME = process.env.BUCKET_NAME
+  const OSM_FOLDER = 'osm'
 
-  console.log(event)
-  console.log(context)
   const userData = [
     '#!/bin/bash',
-    'shutdown -h +1440', // 1 day. just to make sure we're not running an expensive server for ever in case something goes wrong
+    'shutdown -h +1440', // 1 day. just to make sure we're not running an expensive server forever in case something goes wrong
     'yum update -y',
     'yum install python3 git -y',
     'python3 -m venv python-env',
@@ -25,12 +24,12 @@ exports.handler = async function (event, context) {
     '  osmfile=${f%.zip}.osm',
     '  logfile=${f%.zip}.log',
     '  python nvdb2osm.py $f $osmfile -d --skip_railway 2>&1 | tee $logfile',
-    `  aws s3 cp $logfile s3://${BUCKET_NAME}/osm/ --acl public-read`,
-    `  aws s3 cp $osmfile s3://${BUCKET_NAME}/osm/ --acl public-read`,
-    '  rm $logfile',
-    '  rm $osmfile',
+    `  aws s3 cp $logfile s3://${BUCKET_NAME}/${OSM_FOLDER}/ --acl public-read`,
+    `  aws s3 cp $osmfile s3://${BUCKET_NAME}/${OSM_FOLDER}/ --acl public-read`,
     '  rm $f',
     'done',
+    // s3 sync in the end because it sometimes happens that files are not uploaded
+    `aws s3 sync ./data/ s3://${BUCKET_NAME}/${OSM_FOLDER}/ --exclude="*" --include="*.log" --include="*.osm" --acl public-read`,
     'shutdown -h',
   ]
 
