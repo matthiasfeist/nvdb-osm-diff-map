@@ -23,7 +23,7 @@ exports.handler = async function (event, context) {
     '  echo ${f%.zip}',
     '  osmfile=${f%.zip}.osm',
     '  logfile=${f%.zip}.log',
-    '  python nvdb2osm.py $f $osmfile -d --skip_railway 2>&1 | tee $logfile',
+    '  python nvdb2osm.py $f $osmfile -v --skip_railway 2>&1 | tee $logfile',
     `  aws s3 cp $logfile s3://${BUCKET_NAME}/${OSM_FOLDER}/ --acl public-read`,
     `  aws s3 cp $osmfile s3://${BUCKET_NAME}/${OSM_FOLDER}/ --acl public-read`,
     '  rm $f',
