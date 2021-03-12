@@ -19,7 +19,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "deploytos3": "aws s3 sync ./build/ s3://nvdb-osm-map-data/ --acl public-read"
+    "deploy": "aws s3 sync ./build/ s3://nvdb-osm-map-data/ --exclude=\"*.json\" --acl public-read"
   },
   "eslintConfig": {
     "extends": [
