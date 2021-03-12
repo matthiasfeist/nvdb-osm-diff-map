@@ -31,6 +31,17 @@ function App() {
         </div>
       </header>
       <div className="max-w-7xl mx-auto py-6 px-4 ">
+        I need to add some nice text here...
+      </div>
+
+      <header className="shadow-md bg-white">
+        <div className="max-w-7xl mx-auto py-6 px-4">
+          <h2 className="text-2xl leading-6 font-medium tracking-tight text-gray-900">
+            Generated .osm files
+          </h2>
+        </div>
+      </header>
+      <div className="max-w-7xl mx-auto py-6 px-4 ">
         <OsmFileOverview />
       </div>
     </div>
