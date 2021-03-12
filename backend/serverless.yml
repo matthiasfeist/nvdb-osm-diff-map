@@ -51,6 +51,9 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:custom.dataBucketName}
+        WebsiteConfiguration:
+          ErrorDocument: 404.html
+          IndexDocument: index.html
 
     DataBucketAccessManagedPolicy:
       Type: AWS::IAM::ManagedPolicy
