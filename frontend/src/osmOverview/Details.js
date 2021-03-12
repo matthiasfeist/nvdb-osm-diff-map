@@ -141,7 +141,9 @@ function getStatus(sourceData, generatedData) {
     }
 
     return {
-      descr: '',
+      descr: `Files generated ${formatDistance(osmGeneratedDate, new Date(), {
+        addSuffix: true,
+      })}.`,
       status: 'ok',
     }
   }
