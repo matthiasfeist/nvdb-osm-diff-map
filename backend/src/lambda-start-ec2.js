@@ -13,7 +13,7 @@ exports.handler = async function (event, context) {
     'python3 -m venv python-env',
     'source ./python-env/bin/activate',
     'pip install pip --upgrade',
-    'git clone https://github.com/atorger/nvdb2osm.git',
+    'git clone --depth 1 https://github.com/atorger/nvdb2osm.git',
     'cd nvdb2osm/',
     'pip install -r requirements.txt',
     'mkdir data',
