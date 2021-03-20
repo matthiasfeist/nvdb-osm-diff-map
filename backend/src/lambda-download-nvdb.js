@@ -24,7 +24,9 @@ exports.handler = async function (event, context) {
   const feedItems = feed.rss.channel.item
   const queue = new PQueue({ concurrency: 2 })
 
-  for (const tvArea of trafikverketData) {
+  // shuffle the data so that not always the same "kommun" are being downloaded first
+  const shuffledTvData = trafikverketData.sort(() => Math.random() - 0.5)
+  for (const tvArea of shuffledTvData) {
     const areaCode = tvArea.trafikverketAreaCode
     const data = getDataFromFeedItems(feedItems, areaCode)
 
