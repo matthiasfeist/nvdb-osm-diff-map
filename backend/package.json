@@ -18,9 +18,15 @@
     "semi": false
   },
   "dependencies": {
+    "@turf/bbox": "^6.3.0",
+    "@turf/invariant": "^6.3.0",
+    "@turf/line-chunk": "^6.3.0",
+    "@turf/meta": "^6.3.0",
+    "geojson2h3": "^1.1.0",
+    "h3-js": "^3.7.1",
     "node-fetch": "^2.6.1",
+    "osmtogeojson": "^3.0.0-beta.4",
     "p-queue": "^6.6.2",
-    "xml2js": "^0.4.19",
-    "xml2json": "^0.12.0"
+    "xml2js": "^0.4.19"
   }
 }

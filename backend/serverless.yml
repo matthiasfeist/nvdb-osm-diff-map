@@ -10,6 +10,7 @@ provider:
   iamManagedPolicies:
     - !Ref DataBucketAccessManagedPolicy
     - !Ref LaunchEc2InstancesPolicy
+    - !Ref InvokeLambdaPolicy
 
 functions:
   startEc2Processing:
@@ -37,6 +38,14 @@ functions:
     logRetentionInDays: 7
     events:
       - schedule: rate(6 hours)
+
+  generateOsmNvdbDiffJson:
+    handler: src/lambda-generate-osm-nvdb-diff.handler
+    timeout: 300 # 5 minutes
+    memorySize: 2048
+    logRetentionInDays: 7
+    events:
+      - schedule: rate(2 days)
 
 plugins:
   - serverless-plugin-log-retention
@@ -83,6 +92,19 @@ resources:
               Action:
                 - ec2:*
                 - iam:PassRole
+              Resource:
+                - '*'
+
+    InvokeLambdaPolicy:
+      Type: AWS::IAM::ManagedPolicy
+      Properties:
+        ManagedPolicyName: InvokeLambdaPolicy
+        PolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - lambda:InvokeFunction
               Resource:
                 - '*'
 
