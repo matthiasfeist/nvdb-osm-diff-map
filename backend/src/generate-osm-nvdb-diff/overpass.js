@@ -1,5 +1,6 @@
 const querystring = require('querystring')
 const fetch = require('node-fetch')
+const retry = require('async-retry')
 const osmtogeojson = require('osmtogeojson')
 
 module.exports.getGeoJsonFromOverpass = async (bbox) => {
@@ -12,10 +13,16 @@ module.exports.getGeoJsonFromOverpass = async (bbox) => {
     out geom;
     `
   const query = querystring.encode({ data: overpassQuery })
-  const url = 'https://overpass-api.de/api/interpreter?' + query
+  const server =
+    Math.random() > 0.5
+      ? 'https://lz4.overpass-api.de'
+      : 'https://z.overpass-api.de'
+  const url = server + '/api/interpreter?' + query
 
-  const response = await fetch(url)
-  const data = await response.json()
+  const data = await retry(async (bail) => {
+    const response = await fetch(url)
+    return await response.json()
+  })
   const geoJson = osmtogeojson(data)
   return geoJson
 }
