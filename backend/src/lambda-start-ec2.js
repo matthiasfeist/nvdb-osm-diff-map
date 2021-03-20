@@ -56,6 +56,12 @@ exports.handler = async function (event, context) {
         },
       },
     ],
+    TagSpecifications: [
+      {
+        ResourceType: 'instance',
+        Tags: [{ Key: 'Name', Value: 'Nvdb2osm-run' }],
+      },
+    ],
   }
   const result = await ec2.runInstances(params).promise()
   console.log(result)
