@@ -39,10 +39,10 @@ functions:
     events:
       - schedule: rate(6 hours)
 
-  generateOsmNvdbDiffJson:
+  generateOsmNvdbDiff:
     handler: src/lambda-generate-osm-nvdb-diff.handler
-    timeout: 300 # 5 minutes
-    memorySize: 2048
+    timeout: 360 # 6 minutes
+    memorySize: 4000
     logRetentionInDays: 7
     events:
       - schedule: rate(2 days)
@@ -77,6 +77,7 @@ resources:
                 - s3:PutObject
                 - s3:ListBucket
                 - s3:PutObjectAcl
+                - s3:DeleteObject
               Resource:
                 - arn:aws:s3:::${self:custom.dataBucketName}/*
                 - arn:aws:s3:::${self:custom.dataBucketName}
