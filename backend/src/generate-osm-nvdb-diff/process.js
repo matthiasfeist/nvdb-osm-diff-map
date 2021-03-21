@@ -1,10 +1,11 @@
 const { osmXmlToGeoJson } = require('./osmXmlToGeoJson')
 const { getGeoJsonFromOverpass } = require('./overpass')
 const { preprocessGeoJson } = require('./preprocessGeoJson')
-const { generateLayers } = require('./generateLayers')
+const { detectProblems } = require('./detectProblems')
 const {
   mapToLargerH3Indexes,
-  generateGeoJsonObjects,
+  generateProblemsGeoJsonObjects,
+  generateNvdbGeometryGeoJsonObjects,
 } = require('./outputFormatter')
 const bbox = require('@turf/bbox').default
 
@@ -26,12 +27,24 @@ module.exports.processOsm = async (osmXmlString) => {
   console.timeEnd('processGeoJson-overpass')
 
   console.time('layers')
-  const layerMap = generateLayers(resultMapNvdb, resultMapOverpass)
+  const problemsMap = detectProblems(resultMapNvdb, resultMapOverpass)
   console.timeEnd('layers')
   console.time('mapToLarger')
-  mapToLargerH3Indexes(layerMap)
-  const geoJsonLines = generateGeoJsonObjects(layerMap)
+  const problemsMapLarger = mapToLargerH3Indexes(problemsMap)
   console.timeEnd('mapToLarger')
+
+  const geoJsonLines = [
+    ...generateProblemsGeoJsonObjects(problemsMapLarger),
+    ...generateNvdbGeometryGeoJsonObjects(nvdbGeoJson),
+  ]
+
+  // can be used for debugging locally if you want valid GeoJson
+  // return JSON.stringify(
+  //   {
+  //     type: 'FeatureCollection',
+  //     features: geoJsonLines,
+  //   }
+  // )
 
   return geoJsonLines
     .map((polygon) => {

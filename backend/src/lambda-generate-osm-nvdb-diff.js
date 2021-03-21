@@ -43,7 +43,7 @@ async function startEc2WithTippecanoe() {
     'cd ..',
     `aws s3 sync s3://${BUCKET_NAME}/tiles/json ./json/`,
     'mkdir pbf',
-    'tippecanoe -e pbf/ --maximum-zoom=8 --minimum-zoom=4 --read-parallel --drop-densest-as-needed --generate-ids --force json/*.json',
+    'tippecanoe -e pbf/ --maximum-zoom=16 --minimum-zoom=7 --read-parallel --drop-densest-as-needed --reorder --coalesce --generate-ids --force json/*.json',
     `aws s3 rm s3://${BUCKET_NAME}/tiles/pbf --recursive`,
     `aws s3 sync ./pbf/ s3://${BUCKET_NAME}/tiles/pbf --acl public-read --content-encoding gzip`,
     'shutdown -h',

@@ -1,18 +1,13 @@
 const h3 = require('h3-js')
 
 /**
- * Generates the layers with all the H3 indexes where there is a difference detected
+ * Generates the list of problems with all the H3 indexes where there is a difference detected
  * @param {Map} nvdbMap
  * @param {Map} overpassMap
  * @returns
  */
-module.exports.generateLayers = (nvdbMap, overpassMap) => {
-  const missingMajorRoads = new Set()
-  const missingMinorRoads = new Set()
-  const highway = new Set()
-  const lanes = new Set()
-  const maxspeed = new Set()
-  const names = new Set()
+module.exports.detectProblems = (nvdbMap, overpassMap) => {
+  const resultMap = new Map()
 
   for (const h3Index of nvdbMap.keys()) {
     const nvdbTags = nvdbMap.get(h3Index)
@@ -26,52 +21,45 @@ module.exports.generateLayers = (nvdbMap, overpassMap) => {
         )
       )
       if (nvdbContainsLargerRoads) {
-        missingMajorRoads.add(h3Index)
+        resultMap.set(h3Index, new Set(['missingMajorRoad']))
       } else {
-        missingMinorRoads.add(h3Index)
+        resultMap.set(h3Index, new Set(['missingMinorRoad']))
       }
       continue
     }
 
+    const resultSet = new Set()
     if (areOsmTagsDifferent(nvdbTags, overpassTags, 'highway')) {
-      highway.add(h3Index)
+      resultSet.add('highway')
     }
     if (areOsmTagsDifferent(nvdbTags, overpassTags, 'maxspeed')) {
-      maxspeed.add(h3Index)
+      resultSet.add('maxspeed')
     }
     if (areOsmTagsDifferent(nvdbTags, overpassTags, 'lanes')) {
-      lanes.add(h3Index)
+      resultSet.add('lanes')
     }
     if (areOsmTagsDifferent(nvdbTags, overpassTags, 'name')) {
-      names.add(h3Index)
+      resultSet.add('name')
+    }
+    if (resultSet.size > 0) {
+      resultMap.set(h3Index, resultSet)
     }
   }
 
   // now we have a list of H3 indexes which do differ, now let's check if there is a matching H3 ID nearby.
   // this is meant to filter out all these "jitter" dots that where the geometry is more than one H3index off.
-  const filterJitterEntires = (setToFilter) => {
-    setToFilter.forEach((h3Index) => {
-      const idsAround = h3.kRingDistances(h3Index, 1)[1]
-      for (const h3RingIndex of idsAround) {
-        if (setToFilter.has(h3RingIndex)) {
-          return // there is an entry nearby. do nothing
-        }
+  resultMap.forEach((h3Index) => {
+    const idsAround = h3.kRingDistances(h3Index, 1)[1]
+    for (const h3RingIndex of idsAround) {
+      if (resultMap.has(h3RingIndex)) {
+        return // there is an entry nearby. do nothing
       }
-      // no entry in the map nearby. Delete this point from the map
-      setToFilter.delete(h3Index)
-    })
-  }
+    }
+    // no entry in the map nearby. Delete this point from the map
+    resultMap.delete(h3Index)
+  })
 
-  const layerMap = new Map()
-  layerMap.set('missingMajorRoads', missingMajorRoads)
-  layerMap.set('missingMinorRoads', missingMinorRoads)
-  layerMap.set('highway', highway)
-  layerMap.set('maxspeed', maxspeed)
-  layerMap.set('lanes', lanes)
-  layerMap.set('names', names)
-
-  layerMap.forEach((h3IndexSet) => filterJitterEntires(h3IndexSet))
-  return layerMap
+  return resultMap
 }
 
 function areOsmTagsDifferent(nvdbOsmTags, overpassOsmTags, tagName) {
