@@ -7,8 +7,8 @@ module.exports.getGeoJsonFromOverpass = async (bbox) => {
   const overpassQuery = `
     [out:json][timeout:25][bbox:${bbox[1]},${bbox[0]},${bbox[3]},${bbox[2]}];
     (
-      way["highway"~"motoryway|trunk|primary|primary_link|secondary|secondary_link|tertiary|residential|unclassified|service|track|cycleway"];
-      relation["highway"~"motoryway|trunk|primary|primary_link|secondary|secondary_link|tertiary|residential|unclassified|service|track|cycleway"];
+      way["highway"~"motorway|trunk|primary|primary_link|secondary|secondary_link|tertiary|residential|unclassified|service|track|cycleway"];
+      relation["highway"~"motorway|trunk|primary|primary_link|secondary|secondary_link|tertiary|residential|unclassified|service|track|cycleway"];
     );
     out geom;
     `
