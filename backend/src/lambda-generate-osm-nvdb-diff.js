@@ -34,7 +34,7 @@ async function startEc2WithTippecanoe() {
   const userData = [
     '#!/bin/bash',
     'sleep 300', // so that the lambda functions have some time to finish
-    'shutdown -h +120', // 2 hours. just to make sure we're not running an expensive server forever in case something goes wrong
+    'shutdown -h +300', // 5 hours. just to make sure we're not running an expensive server forever in case something goes wrong
     'yum update -y',
     'yum install git zlib zlib-devel gcc-c++ sqlite-devel -y',
     'git clone --depth 1 https://github.com/mapbox/tippecanoe.git',
@@ -44,8 +44,9 @@ async function startEc2WithTippecanoe() {
     `aws s3 sync s3://${BUCKET_NAME}/tiles/json ./json/`,
     'mkdir pbf',
     'tippecanoe -e pbf/ --maximum-zoom=16 --minimum-zoom=7 --read-parallel --drop-densest-as-needed --reorder --coalesce --generate-ids --force json/*.json',
+    'aws configure set default.s3.max_concurrent_requests 20',
     `aws s3 rm s3://${BUCKET_NAME}/tiles/pbf --recursive`,
-    `aws s3 sync ./pbf/ s3://${BUCKET_NAME}/tiles/pbf --acl public-read --content-encoding gzip`,
+    `aws s3 cp ./pbf/ s3://${BUCKET_NAME}/tiles/pbf --acl public-read --recursive --content-encoding gzip`,
     'shutdown -h',
   ]
 
