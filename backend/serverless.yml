@@ -31,7 +31,7 @@ functions:
     logRetentionInDays: 7
     events:
       # run at 6:00 on each 21st (as it seems that most files are being updated on the 20st of each month)
-      - schedule: cron(0 6 21 * ? *)
+      - schedule: cron(0 5 21 * ? *)
 
   generateDataIndexJson:
     handler: src/lambda-generate-data-index-json.handler
@@ -45,7 +45,7 @@ functions:
     memorySize: 4000
     logRetentionInDays: 7
     events:
-      - schedule: rate(2 days)
+      - schedule: rate(7 days)
 
 plugins:
   - serverless-plugin-log-retention
