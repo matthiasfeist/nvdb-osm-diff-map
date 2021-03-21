@@ -51,7 +51,7 @@ exports.handler = async function (event, context) {
         DeviceName: '/dev/xvda',
         Ebs: {
           DeleteOnTermination: true,
-          VolumeSize: 16,
+          VolumeSize: 20,
           VolumeType: 'gp2',
         },
       },

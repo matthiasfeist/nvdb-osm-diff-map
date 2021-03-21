@@ -67,7 +67,7 @@ async function startEc2WithTippecanoe() {
         DeviceName: '/dev/xvda',
         Ebs: {
           DeleteOnTermination: true,
-          VolumeSize: 8,
+          VolumeSize: 20,
           VolumeType: 'gp2',
         },
       },
