@@ -13,8 +13,8 @@ provider:
     - !Ref InvokeLambdaPolicy
 
 functions:
-  startEc2Processing:
-    handler: src/lambda-start-ec2.handler
+  startNvdb2OsmEC2:
+    handler: src/lambda-start-nvdb2osm-ec2.handler
     logRetentionInDays: 7
     timeout: 120 # 2 minutes
     memorySize: 128
@@ -33,8 +33,8 @@ functions:
       # run at 6:00 on each 21st (as it seems that most files are being updated on the 20st of each month)
       - schedule: cron(0 6 21 * ? *)
 
-  compileFileInformation:
-    handler: src/lambda-compile-file-information.handler
+  generateDataIndexJson:
+    handler: src/lambda-generate-data-index-json.handler
     logRetentionInDays: 7
     events:
       - schedule: rate(6 hours)
