@@ -63,6 +63,20 @@ resources:
         WebsiteConfiguration:
           ErrorDocument: 404.html
           IndexDocument: index.html
+        LifecycleConfiguration:
+          Rules:
+            - Id: RemoveOldTiles
+              Prefix: tiles
+              Status: Enabled
+              ExpirationInDays: 20
+            - Id: RemoveOldOsmFiles
+              Prefix: osm
+              Status: Enabled
+              ExpirationInDays: 65
+            - Id: RemoveOldNvdbZipFiles
+              Prefix: nvdb-zip
+              Status: Enabled
+              ExpirationInDays: 65
 
     DataBucketAccessManagedPolicy:
       Type: AWS::IAM::ManagedPolicy
