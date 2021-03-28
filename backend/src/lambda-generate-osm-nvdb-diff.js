@@ -126,7 +126,7 @@ async function processOsmFileFromS3(slug) {
     console.log('S3 object successfully retrieved')
 
     console.log('Processing OSM XML file')
-    const processingResult = await processOsm(osmXmlString)
+    const processingResult = await processOsm(osmXmlString, slug)
     console.log('Processing OSM XML file – Done')
 
     console.log('Start uploading Line Delimited JSON to S3')

@@ -1,2 +1,3 @@
 module.exports.H3_RESOLUTION_DETAILED = 11
-module.exports.H3_RESOLUTION_OVERVIEW = 9
+module.exports.H3_RESOLUTION_OVERVIEW = 8
+module.exports.DETAILED_ZOOMLEVEL_SWITCH = 12

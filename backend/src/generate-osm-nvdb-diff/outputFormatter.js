@@ -16,7 +16,12 @@ module.exports.mapToLargerH3Indexes = (problemsMap) => {
   return newMap
 }
 
-module.exports.generateProblemsGeoJsonObjects = (problemsMap) => {
+module.exports.generateProblemsGeoJsonObjects = (
+  problemsMap,
+  slug,
+  minzoom,
+  maxzoom
+) => {
   const result = []
   problemsMap.forEach((setWithProblems, h3Index) => {
     const props = {
@@ -26,30 +31,36 @@ module.exports.generateProblemsGeoJsonObjects = (problemsMap) => {
       maxspeed: setWithProblems.has('maxspeed'),
       lanes: setWithProblems.has('lanes'),
       name: setWithProblems.has('name'),
+      slug,
     }
     const polygon = geojson2h3.h3ToFeature(h3Index, props)
-    polygon.tippecanoe = { layer: 'problems' }
+    polygon.tippecanoe = { layer: 'problems', minzoom, maxzoom }
     delete polygon.id
     result.push(polygon)
   })
   return result
 }
 
-module.exports.generateNvdbGeometryGeoJsonObjects = (nvdbGeoJson) => {
+module.exports.generateNvdbGeometryGeoJsonObjects = (nvdbGeoJson, minzoom) => {
   const result = []
   featureEach(nvdbGeoJson, (currentFeature) => {
     if (getType(currentFeature) !== 'LineString') {
       return
     }
+    currentFeature.tippecanoe = { layer: 'nvdb', minzoom }
+
+    const highway = currentFeature?.properties?.highway
+    if (highway === 'footway' || highway === 'cycleway') {
+      currentFeature.tippecanoe = { layer: 'footcycle', minzoom: 14 }
+    }
 
     const props = {
-      highway: currentFeature?.properties?.highway,
+      highway,
       maxspeed: currentFeature?.properties?.maxspeed,
       lanes: currentFeature?.properties?.lanes,
       name: currentFeature?.properties?.name,
     }
 
-    currentFeature.tippecanoe = { layer: 'nvdb', minzoom: 12 }
     currentFeature.properties = props
     delete currentFeature.id
     result.push(currentFeature)

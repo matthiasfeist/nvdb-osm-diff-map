@@ -2,6 +2,7 @@ const { osmXmlToGeoJson } = require('./osmXmlToGeoJson')
 const { getGeoJsonFromOverpass } = require('./overpass')
 const { preprocessGeoJson } = require('./preprocessGeoJson')
 const { detectProblems } = require('./detectProblems')
+const { DETAILED_ZOOMLEVEL_SWITCH } = require('./config')
 const {
   mapToLargerH3Indexes,
   generateProblemsGeoJsonObjects,
@@ -9,7 +10,7 @@ const {
 } = require('./outputFormatter')
 const bbox = require('@turf/bbox').default
 
-module.exports.processOsm = async (osmXmlString) => {
+module.exports.processOsm = async (osmXmlString, slug) => {
   console.time('reading OSM XML')
   const nvdbGeoJson = osmXmlToGeoJson(osmXmlString)
   console.timeEnd('reading OSM XML')
@@ -30,12 +31,25 @@ module.exports.processOsm = async (osmXmlString) => {
   const problemsMap = detectProblems(resultMapNvdb, resultMapOverpass)
   console.timeEnd('layers')
   console.time('mapToLarger')
-  const problemsMapLarger = mapToLargerH3Indexes(problemsMap)
   console.timeEnd('mapToLarger')
 
   const geoJsonLines = [
-    ...generateProblemsGeoJsonObjects(problemsMapLarger),
-    ...generateNvdbGeometryGeoJsonObjects(nvdbGeoJson),
+    ...generateProblemsGeoJsonObjects(
+      problemsMap,
+      slug,
+      DETAILED_ZOOMLEVEL_SWITCH,
+      16
+    ),
+    ...generateProblemsGeoJsonObjects(
+      mapToLargerH3Indexes(problemsMap),
+      slug,
+      6,
+      DETAILED_ZOOMLEVEL_SWITCH - 1
+    ),
+    ...generateNvdbGeometryGeoJsonObjects(
+      nvdbGeoJson,
+      DETAILED_ZOOMLEVEL_SWITCH
+    ),
   ]
 
   // can be used for debugging locally if you want valid GeoJson
