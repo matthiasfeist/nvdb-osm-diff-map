@@ -41,12 +41,17 @@ async function startEc2WithTippecanoe() {
     'cd tippecanoe/',
     'make install',
     'cd ..',
-    `aws s3 sync s3://${BUCKET_NAME}/tiles/json ./json/`,
+    `aws s3 cp s3://${BUCKET_NAME}/tiles/json ./json/ --recursive`,
     'mkdir pbf',
     'tippecanoe -e pbf/ --maximum-zoom=16 --minimum-zoom=7 --read-parallel --drop-densest-as-needed --reorder --coalesce --generate-ids --force json/*.json',
-    'aws configure set default.s3.max_concurrent_requests 40',
-    `aws s3 rm s3://${BUCKET_NAME}/tiles/pbf --recursive`,
-    `aws s3 cp ./pbf/ s3://${BUCKET_NAME}/tiles/pbf --acl public-read --recursive --content-encoding gzip`,
+    'rm -rf json/',
+    'aws configure set default.s3.max_concurrent_requests 30',
+    'aws configure set default.s3.max_queue_size 5000',
+    'for i in {7..16}', // we're doing this to upload the largest zoom levels first
+    '  do',
+    `  aws s3 cp ./pbf/$i s3://${BUCKET_NAME}/tiles/pbf/$i --acl public-read --recursive --content-encoding gzip`,
+    'done',
+    `aws s3 rm s3://${BUCKET_NAME}/tiles/json --recursive`, // remove the now obsolete json files
     'shutdown -h',
   ]
 
@@ -68,7 +73,7 @@ async function startEc2WithTippecanoe() {
         DeviceName: '/dev/xvda',
         Ebs: {
           DeleteOnTermination: true,
-          VolumeSize: 20,
+          VolumeSize: 30,
           VolumeType: 'gp2',
         },
       },
