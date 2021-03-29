@@ -33,7 +33,7 @@ async function startEc2WithTippecanoe() {
 
   const userData = [
     '#!/bin/bash',
-    'sleep 300', // so that the lambda functions have some time to finish
+    'sleep 600', // so that the lambda functions have some time to finish
     'shutdown -h +300', // 5 hours. just to make sure we're not running an expensive server forever in case something goes wrong
     'yum update -y',
     'yum install git zlib zlib-devel gcc-c++ sqlite-devel -y',
@@ -41,17 +41,18 @@ async function startEc2WithTippecanoe() {
     'cd tippecanoe/',
     'make install',
     'cd ..',
-    `aws s3 cp s3://${BUCKET_NAME}/tiles/json ./json/ --recursive`,
+    `aws s3 cp s3://${BUCKET_NAME}/tiles/json ./json/ --recursive --only-show-errors`,
     'mkdir pbf',
-    'tippecanoe -e pbf/ --maximum-zoom=16 --minimum-zoom=7 --read-parallel --drop-densest-as-needed --reorder --coalesce --generate-ids --force json/*.json',
+    'tippecanoe -e pbf/ --maximum-zoom=15 --minimum-zoom=6 --read-parallel --drop-densest-as-needed --reorder --coalesce --generate-ids --force json/*.json',
     'rm -rf json/',
     'aws configure set default.s3.max_concurrent_requests 30',
-    'aws configure set default.s3.max_queue_size 5000',
-    'for i in {7..16}', // we're doing this to upload the largest zoom levels first
+    'aws configure set default.s3.max_queue_size 3000',
+    'for i in {6..15}', // we're doing this to upload the largest zoom levels first
     '  do',
-    `  aws s3 cp ./pbf/$i s3://${BUCKET_NAME}/tiles/pbf/$i --acl public-read --recursive --content-encoding gzip`,
+    '  echo "Uploading zoom level $i"',
+    `  aws s3 cp ./pbf/$i s3://${BUCKET_NAME}/tiles/pbf/$i --acl public-read --recursive --content-encoding gzip --only-show-errors`,
     'done',
-    `aws s3 rm s3://${BUCKET_NAME}/tiles/json --recursive`, // remove the now obsolete json files
+    `aws s3 rm s3://${BUCKET_NAME}/tiles/json --recursive --only-show-errors`, // remove the now obsolete json files
     'shutdown -h',
   ]
 

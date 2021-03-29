@@ -14,16 +14,18 @@ function Map() {
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v10',
       zoom: 6,
-      center: [21.796875, 66.790347],
+      center: [17.93, 64.88],
       hash: true,
+      maxZoom: 16,
+      minZoom: 6,
     })
     setMap(map)
 
     map.on('load', () => {
       map.addSource('tiles', {
         type: 'vector',
-        minzoom: 7,
-        maxzoom: 16,
+        minzoom: 6,
+        maxzoom: 15,
         tiles: [
           'https://nvdb-osm-map-data.s3.eu-north-1.amazonaws.com/tiles/pbf/{z}/{x}/{y}.pbf',
           //'http://localhost:5000/tiles/pbf/{z}/{x}/{y}.pbf',
