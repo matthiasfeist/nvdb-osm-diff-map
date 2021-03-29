@@ -15,9 +15,7 @@ function App() {
       </div>
 
       <SectionHeader>Difference Map</SectionHeader>
-      <div className="max-w-7xl mx-auto">
-        <Map />
-      </div>
+      <Map />
 
       <SectionHeader>Generated .osm files</SectionHeader>
       <div className="max-w-7xl mx-auto py-6 px-4 ">

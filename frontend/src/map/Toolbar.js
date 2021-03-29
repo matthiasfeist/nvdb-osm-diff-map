@@ -17,7 +17,7 @@ function OsmFileOverview(props) {
   }
 
   return (
-    <div className="bg-gray-100 px-2 my-3 space-x-2">
+    <div className="max-w-7xl mx-auto bg-gray-100 px-2 my-3 space-x-2">
       {button('maxspeed', 'Maxspeed')}
       {button('lanes', 'Lanes')}
       {button('highway', 'Highway type')}

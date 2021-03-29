@@ -105,7 +105,11 @@ function Map() {
         problemToShow={problemToShow}
         setProblemToShow={setProblemToShow}
       />
-      <div id="map" style={{ width: '100%', height: 600 }}>
+      <div
+        id="map"
+        className="border border-gray-300 mb-2"
+        style={{ width: '100%', height: 600 }}
+      >
         map
       </div>
     </div>
