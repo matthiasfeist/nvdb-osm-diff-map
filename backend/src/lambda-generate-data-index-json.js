@@ -84,5 +84,6 @@ function getGeneratedData(slug, ext, osmAndLogsListing, bucketname) {
   return {
     generatedDate: new Date(item.LastModified).toISOString(),
     downloadLink: `https://${bucketname}.s3.amazonaws.com/osm/${slug}.${ext}`,
+    size_bytes: item.Size,
   }
 }
