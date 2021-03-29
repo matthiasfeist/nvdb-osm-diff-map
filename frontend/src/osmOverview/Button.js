@@ -1,5 +1,14 @@
 function Button(props) {
-  const { caption, onClick, link = '#', icon } = props
+  const { caption, onClick, link = '#', icon, size_bytes } = props
+
+  let sizeElement = null
+  if (size_bytes) {
+    sizeElement = (
+      <span className="text-xs text-gray-500 pl-1">
+        ({Math.round(size_bytes / 1024 / 1024)} MB)
+      </span>
+    )
+  }
 
   let iconElement = null
   if (icon === 'download') {
@@ -43,7 +52,7 @@ function Button(props) {
       className="mr-3 mb-3 inline-flex items-center pr-5 text-sm font-medium text-gray-700 bg-white hover:underline hover:text-gray-900"
     >
       {iconElement}
-      {caption}
+      {caption} {sizeElement}
     </a>
   )
 }

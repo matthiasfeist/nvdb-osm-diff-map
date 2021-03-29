@@ -1,4 +1,4 @@
-import Button from '../components/button'
+import Button from './Button'
 import { differenceInDays, formatDistance } from 'date-fns'
 
 function Details(props) {
@@ -36,6 +36,7 @@ function Details(props) {
       <Button
         key="osmdownload"
         caption="Download .osm"
+        size_bytes={generatedData?.osm?.size_bytes}
         link={generatedData?.osm?.downloadLink}
         icon="download"
       />
