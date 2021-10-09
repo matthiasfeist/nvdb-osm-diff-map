@@ -45,7 +45,7 @@ functions:
     memorySize: 4000
     logRetentionInDays: 7
     events:
-      - schedule: rate(7 days)
+      - schedule: cron(0 8 22 * ? *)
 
 plugins:
   - serverless-plugin-log-retention
